@@ -1,17 +1,23 @@
 // throw exception instead of silent errors.
 'use strict'
 
-// only 'var' in root is assigned to window global variable, but let and const cannot be added
-var name = 'Muath';
-
-function init() {
-    if (true) {
-        // var global block
-        var email = 'muath@example.com';
-        // let local block
-        let email = 'muath@example.com';
+let users = [
+    {
+        name: 'Muath',
+        email: 'muath@example.coom',
+    },
+    {
+        name: 'Ahmed',
+        email: 'ahmed@example.coom',
     }
-    document.getElementById('output').innerHTML = email;
-}
+];
 
-init();
+let names = [];
+
+// users.forEach(function(user){
+//     names.push(user.name);
+// });
+
+users.forEach(user => names.push(user.name));
+
+document.getElementById('output').innerHTML = names.join(', ');
