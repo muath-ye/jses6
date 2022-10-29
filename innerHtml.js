@@ -1,0 +1,1 @@
+export default (id, data) => document.getElementById(id).innerHTML = data;
