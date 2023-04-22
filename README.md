@@ -1,3 +1,3 @@
 "# jses6" 
 
-This repo needs README
+This is an example of JavascriptES6
